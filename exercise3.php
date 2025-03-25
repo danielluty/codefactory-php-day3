@@ -2,7 +2,8 @@
 
 
 // THE FUNCTION
-function findHighestValue($array) {
+function findHighestValue($array)
+{
     // Assuming that the first elemen in the array is the highest one
     $highestNumber = $array[0];
 
@@ -25,4 +26,12 @@ $randomNumbers = [];
 for ($i = 0; $i < 10; $i++) {
     $randomNumbers[$i] = rand(1, 100);
 }
+
+// SEARCHING FOR THE HIGHEST NUMBER
+// echo "$randomNumbers";
+echo implode ("<br>", $randomNumbers);
+
+$highestNumber = findHighestValue($randomNumbers);
+
+echo "<br><br>" . $highestNumber;
 
