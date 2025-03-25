@@ -1,0 +1,22 @@
+<?php
+
+
+// THE FUNCTION
+function findHighestValue($array) {
+    // Assuming that the first elemen in the array is the highest one
+    $highestNumber = $array[0];
+
+    // looping through the array. as long as $num is more than $highestNumber, it will get $highestNumber
+    // Will loop as long as $highestNumber is the highest number
+    foreach ($array as $num) {
+        if ($num > $highestNumber) {
+            $highestNumber = $num;
+        }
+    }
+
+    // Returns the highest number from the array
+    return $highestNumber;
+}
+
+
+// THE ARRAY
