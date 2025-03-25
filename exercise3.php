@@ -20,3 +20,9 @@ function findHighestValue($array) {
 
 
 // THE ARRAY
+$randomNumbers = [];
+
+for ($i = 0; $i < 10; $i++) {
+    $randomNumbers[$i] = rand(1, 100);
+}
+
